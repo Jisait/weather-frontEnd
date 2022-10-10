@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+;
+  
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(rgba(0, 1, 43, 0.199) 30%, rgba(0, 0, 0, 0));
+  border-radius: 8px;
+  width: 580px;
+  height: 60px;
+  margin: 5px 5px;
+  object-fit: cover;
+  object-position: 0 80%;
+  transition: object-position 0.5s cubic-bezier(.36,.05,.54,.98);
+  z-index: 1;
+
+}
+ 
+
+.card {
+
+  border-radius: 8px;
+  width: 580px;
+  height: 60px;
+  margin: 5px 5px;
+  object-fit: cover;
+  object-position: 0 80%;
+  transition: object-position 0.5s cubic-bezier(.36,.05,.54,.98);
+  box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+ 
+}
+
+
+.cross{
+  margin-right: 10px;
+  z-index: 3;
+  transition: 0.3s cubic-bezier(.37,.56,.77,.95);
+  color: rgba(255,255,255,0.2);
+  font-size: 20px;
+}
+
+.cross:hover{
+  color: #1A1A1A;
+  transform: rotate(180deg);
+
+}
+
+/* TOP INFO   */
+
+.mainInfoContainer{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 580px;
+  height: 60px;
+  margin-top: 5px;
+}
+
+.city {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.temp {
+  font-family: "Quicksand";
+  font-weight: 100;
+  font-size: 45px;
+  margin-left: auto;
+  margin-right: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.desc{
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.trait{
+  background-color: white;
+  margin-top: 25px;
+  width: 180px;
+  height: 1px;
+  z-index: 2;
+}
+
+ .miscInfoContainer{ 
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}  
+
+.leftColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tempMinText {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  margin-top: 32px;
+  z-index: 2;
+}
+
+.tempMin {
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  margin-top: 3px;
+  z-index: 2;
+}
+
+
+.humidityText {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  margin-top: 25px;
+  z-index: 2;
+}
+
+
+.humidity {
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  margin-top: 3px;
+  z-index: 2;
+}
+
+
+
+

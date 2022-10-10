@@ -1,0 +1,83 @@
+.switchContainer {
+  margin-right: 20px;
+}
+
+.buttonOff {
+    background-color: rgb(233, 233, 233);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+    width: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    z-index: 0;
+  }
+  
+.buttonOn {
+  background-color: rgb(233, 233, 233);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+    width: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    z-index: 0;
+  }
+
+  .displayOrder{
+    margin-top: 3px;
+    z-index: 1
+
+  }
+
+  @keyframes toLeft {
+    from {
+      left: 21px;
+    }
+    to {
+      left: 3px;
+    }
+}
+
+
+  .pinOn {
+    background-color: #5F98D1;
+    border-radius: 10px 10px 10px 10px;
+    animation-name: toLeft;
+    animation-duration: 0.3s;
+    left: 3px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    z-index: 2;
+  }
+  
+
+  @keyframes toRight {
+      from {
+        left: 3px;
+      }
+      to {
+        left: 21px;
+      }
+  }
+
+  .pinOff {
+    background-color: #5F98D1;
+    border-radius: 10px 10px 10px 10px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    left: 21px;
+    animation-name: toRight;
+    animation-duration: 0.3s;
+    position: absolute;
+    z-index: 2
+  }
+  
