@@ -7,6 +7,8 @@ import { CloseCircleOutlined} from '@ant-design/icons';
 
 function Card(props) {
 
+// probleme style Card 1 a regler
+
   console.log(props.index)
   console.log(props.lastIndex)
 
